@@ -1,8 +1,8 @@
 class Polygon {
-    constructor(lengths) {
-        this.values = lengths;
+    constructor(s) {
+        this.peri = s.reduce((a, c) => a + c);
     }
     perimeter() {
-        return (this.values).reduce((a, b) => a + b);
+        return this.peri;
     }
 }
