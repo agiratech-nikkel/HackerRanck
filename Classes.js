@@ -1,6 +1,7 @@
 class Polygon {
     constructor(s) {
-        this.peri = s.reduce((a, c) => a + c);
+        const init = 0
+        this.peri = s.reduce((a, c) => a + c, init);
     }
     perimeter() {
         return this.peri;
