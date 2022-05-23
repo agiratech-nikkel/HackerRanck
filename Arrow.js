@@ -3,14 +3,13 @@ function modifyArray(nums) {
     return ans
 }
 
-// function modifyArray(nums) {
-// init =0 
-// return nums.reduce((target, num,init) => {
-// target.push(
-// num % 2 === 0
-// ? num * 2
-// : num * 3
-// );
-// return target;
-// },[])
-// }
+function modifyArray(nums) {
+    return nums.reduce((target, num) => {
+        target.push(
+            num % 2 === 0 ?
+            num * 2 :
+            num * 3
+        );
+        return target;
+    }, [])
+}
