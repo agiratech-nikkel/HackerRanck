@@ -4,7 +4,7 @@ function modifyArray(nums) {
 }
 
 function modifyArray(nums) {
-    return nums.reduce((target, num) => {
+    let ans = nums.reduce((target, num) => {
         target.push(
             num % 2 === 0 ?
             num * 2 :
@@ -12,4 +12,5 @@ function modifyArray(nums) {
         );
         return target;
     }, [])
+    return ans
 }
